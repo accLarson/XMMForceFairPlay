@@ -1,0 +1,11 @@
+# XMMForceFairPlay Configuration
+# Made by Zerek - https://github.com/accLarson
+# Not an official Xaero project
+#
+# Available modes:
+#   FAIR-PLAY: Disables cave mode and entity radar (fair-play mode) - Default
+#   FAIR-PLAY-NETHER: Fair-play mode but allows cave mode in the nether
+#   FULL-DISABLE: Completely disables the minimap
+#   NONE: Does not enforce any restrictions (plugin does nothing)
+#
+MODE: "FAIR-PLAY"

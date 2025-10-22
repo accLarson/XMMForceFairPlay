@@ -1,0 +1,9 @@
+name: XMMForceFairPlay
+version: '${project.version}'
+main: dev.zerek.XMMForceFairPlay.XMMForceFairPlay
+api-version: '1.21'
+
+permissions:
+  fairplay.bypass:
+    description: Allows players to bypass Xaero's Minimap fair-play restrictions
+    default: false
