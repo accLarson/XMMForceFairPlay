@@ -1,2 +1,13 @@
 # Project exclude paths
 /target/
+/.codebuddy/.gitignore
+/.idea/.gitignore
+/.idea/codebuddy.xml
+/.idea/compiler.xml
+/.idea/discord.xml
+/.idea/encodings.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.codebuddy/summary.md
+/.idea/vcs.xml
