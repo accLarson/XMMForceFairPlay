@@ -2,6 +2,8 @@ name: XMMForceFairPlay
 version: '${project.version}'
 main: dev.zerek.XMMForceFairPlay.XMMForceFairPlay
 api-version: '1.21'
+depend:
+  - packetevents
 
 permissions:
   fairplay.bypass:

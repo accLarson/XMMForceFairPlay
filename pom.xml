@@ -55,6 +55,14 @@
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
+        <repository>
+            <id>codemc-repo</id>
+            <url>https://repo.codemc.org/repository/maven-public/</url>
+        </repository>
+        <repository>
+            <id>retrooper-repsy</id>
+            <url>https://repo.repsy.io/mvn/retrooper/packetevents</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -62,6 +70,12 @@
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.21.8-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.retrooper</groupId>
+            <artifactId>packetevents-spigot</artifactId>
+            <version>2.6.0</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
