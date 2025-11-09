@@ -1,5 +1,6 @@
 package dev.zerek.XMMForceFairPlay;
 
+import dev.zerek.XMMForceFairPlay.listeners.PlayerChangedWorldListener;
 import dev.zerek.XMMForceFairPlay.listeners.PlayerJoinListener;
 import dev.zerek.XMMForceFairPlay.managers.PacketManager;
 import dev.zerek.XMMForceFairPlay.managers.ModeManager;
@@ -26,6 +27,7 @@ public final class XMMForceFairPlay extends JavaPlugin {
         packetManager.init();
 
         getServer().getPluginManager().registerEvents(new PlayerJoinListener(this), this);
+        getServer().getPluginManager().registerEvents(new PlayerChangedWorldListener(this), this);
         getLogger().info("XMMForceFairPlay enabled with mode: " + modeManager.getMode());
     }
 
