@@ -1,13 +1,10 @@
 package dev.zerek.XMMForceFairPlay.listeners;
 
-import com.cjcrafter.foliascheduler.FoliaCompatibility;
-import com.cjcrafter.foliascheduler.ServerImplementation;
 import dev.zerek.XMMForceFairPlay.XMMForceFairPlay;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.plugin.java.JavaPlugin;
 
 /**
  * Listens for player join events to send fair-play packets.
