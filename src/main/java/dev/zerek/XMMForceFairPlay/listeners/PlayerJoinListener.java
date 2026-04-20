@@ -34,7 +34,7 @@ public class PlayerJoinListener implements Listener {
         String string = plugin.getModeManager().getString();
 
         if (string != null) {
-            plugin.getServer().getScheduler().runTaskLater(plugin, () ->
+            plugin.scheduler.entity(event.getPlayer()).runDelayed(() ->
                     plugin.getPacketManager().sendString(event.getPlayer(), string), 10L);
         }
     }

@@ -40,8 +40,5 @@ public class PlayerChangedWorldListener implements Listener {
                 }
             }, 10L);
         }
-
-
-
     }
 }

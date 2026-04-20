@@ -1,5 +1,7 @@
 package dev.zerek.XMMForceFairPlay;
 
+import com.cjcrafter.foliascheduler.FoliaCompatibility;
+import com.cjcrafter.foliascheduler.ServerImplementation;
 import dev.zerek.XMMForceFairPlay.listeners.PlayerChangedWorldListener;
 import dev.zerek.XMMForceFairPlay.listeners.PlayerJoinListener;
 import dev.zerek.XMMForceFairPlay.managers.PacketManager;
@@ -10,6 +12,7 @@ public final class XMMForceFairPlay extends JavaPlugin {
 
     private PacketManager packetManager;
     private ModeManager modeManager;
+    public ServerImplementation scheduler = new FoliaCompatibility(this).getServerImplementation();
 
     @Override
     public void onLoad() {
