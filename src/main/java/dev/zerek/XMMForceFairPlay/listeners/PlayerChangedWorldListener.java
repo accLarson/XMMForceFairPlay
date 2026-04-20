@@ -34,8 +34,11 @@ public class PlayerChangedWorldListener implements Listener {
         String string = plugin.getModeManager().getString();
 
         if (string != null) {
-            plugin.scheduler.entity(event.getPlayer()).runDelayed(() ->
-                    plugin.getPacketManager().sendString(event.getPlayer(), string), 10L);
+            plugin.getServer().getScheduler().runTaskLater(plugin, () -> {
+                if (event.getPlayer().isOnline()) {
+                    plugin.getPacketManager().sendString(event.getPlayer(), string);
+                }
+            }, 10L);
         }
     }
 }
