@@ -30,7 +30,7 @@ public class ModeManager {
     private String determineString(String mode) {
         return switch (mode) {
             case "FAIR-PLAY" -> "§f§a§i§r§x§a§e§r§o";
-            case "FAIR-PLAY-NETHER" -> "§f§a§i§r§x§a§e§r§o§x§a§e§r§o§w§m§n§e§t§h§e§r§i§s§f§a§i§r";
+            case "FAIR-PLAY-NETHER" -> "§f§a§i§r§x§a§e§r§o §x§a§e§r§o§m§m§n§e§t§h§e§r§i§s§f§a§i§r";
             case "FULL-DISABLE" -> "§n§o§m§i§n§i§m§a§p";
             case "NONE" -> null;
             default -> {
